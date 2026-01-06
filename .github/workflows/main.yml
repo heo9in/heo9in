@@ -14,11 +14,11 @@ jobs:
       - uses: yoshi389111/github-profile-3d-contrib@0.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          USERNAME: ${{ github.heo9in }}
+          USERNAME: ${{ github.repository_owner }}
       - name: Commit & Push
         run: |
           git config user.name heo9in
-          git config user.email heo9in@github.com
+          git config user.email gjwls031456@gmail.com
           git add -A .
           git commit -m "generated"
           git push
